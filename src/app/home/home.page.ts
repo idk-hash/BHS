@@ -5,6 +5,8 @@ import { MessageComponent } from '../message/message.component';
 
 import { DataService, Message } from '../services/data.service';
 
+import { BluetoothSerial } from 'bluetooth-serial';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -12,9 +14,31 @@ import { DataService, Message } from '../services/data.service';
   standalone: true,
   imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonRefresher, IonRefresherContent, IonList, MessageComponent],
 })
-export class HomePage {
+export class HomePage{
   private data = inject(DataService);
-  constructor() {}
+  public testtt = "ldld ";
+  public devvv!:any;
+
+  async boot() {
+    BluetoothSerial.addListener("connectionChange", async (g)=>{
+      if(await BluetoothSerial.isConnected()) BluetoothSerial.write({data: " kkkHELLLOOOOOOO\n"});});
+    if (!await this.checkExistingBluetooth()) this.openBluetoothConn();}
+
+  async checkExistingBluetooth(){
+    (await BluetoothSerial.list()).devices.forEach(
+      (device) => {
+        if(device.name == "RNBT-925B") BluetoothSerial.connect( {address: device.address});});
+    return (await BluetoothSerial.isConnected()).isConnected;}
+
+  openBluetoothConn() {
+    BluetoothSerial.addListener('discoverUnpaired', 
+      (unpaired) => {unpaired.devices.forEach( 
+        (device)=>{
+          if(device.name == "RNBT-925B") BluetoothSerial.connect({address: device.address});});});
+    BluetoothSerial.discoverUnpaired();}
+
+  constructor() {this.boot();}
+
 
   refresh(ev: any) {
     setTimeout(() => {
