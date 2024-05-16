@@ -359,7 +359,7 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "6297306549351790869"
+        "hash": "12887919454363249508"
       },
       {
         "file": "src/app/message/message.component.html",
@@ -414,20 +414,12 @@
         "hash": "16954762903182255322"
       },
       {
-        "file": "src/app/services/bluetooth.service.spec.ts",
-        "hash": "15668325245109384300"
-      },
-      {
-        "file": "src/app/services/bluetooth.service.ts",
-        "hash": "2773866710395339312"
-      },
-      {
         "file": "src/app/services/data.service.spec.ts",
         "hash": "4103828728699115747"
       },
       {
         "file": "src/app/services/data.service.ts",
-        "hash": "15983176722547156971"
+        "hash": "6180884653690048088"
       },
       {
         "file": "src/app/services/server.service.spec.ts",

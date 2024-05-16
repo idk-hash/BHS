@@ -24,6 +24,7 @@
     "@capacitor-community/bluetooth-le": "^3.1.2",
     "@capacitor/android": "^5.7.3",
     "@capacitor/app": "5.0.7",
+    "@capacitor/background-runner": "^1.0.5",
     "@capacitor/core": "5.7.3",
     "@capacitor/haptics": "5.0.7",
     "@capacitor/keyboard": "5.0.8",
@@ -33,13 +34,15 @@
     "@ionic/angular": "^7.5.0",
     "@ionic/storage": "^4.0.0",
     "bluetooth-serial": "^1.0.0",
+    "firebase": "^10.9.0",
     "ionicons": "^7.2.1",
+    "nodemailer": "^6.9.13",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.0.5",
+    "@angular-devkit/build-angular": "^17.3.1",
     "@angular-eslint/builder": "^17.0.0",
     "@angular-eslint/eslint-plugin": "^17.0.0",
     "@angular-eslint/eslint-plugin-template": "^17.0.0",
@@ -51,6 +54,8 @@
     "@capacitor/cli": "5.7.3",
     "@ionic/angular-toolkit": "^9.0.0",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^20.11.30",
+    "@types/webpack-env": "^1.18.4",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^7.26.0",
@@ -64,6 +69,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
     "typescript": "~5.2.2"
   },
   "description": "An Ionic project"

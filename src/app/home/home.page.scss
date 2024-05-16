@@ -1,0 +1,24 @@
+.main{
+  background-color: green;
+  height: 100%;
+}
+
+.header{
+  background-color: red;
+  text-align: center;
+  font-size: 2em;
+}
+
+.nodeButton{
+  background-color: #81c4ff;
+  width: 20vw;
+  height: 20vw;
+  margin: 1vw;
+  color: #f00000;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

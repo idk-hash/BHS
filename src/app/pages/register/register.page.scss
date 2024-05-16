@@ -4,13 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(61, 90, 110);
+  background-color: rgb(110, 78, 61);
 }
 
 .log-cont {
-  height: fit-content;
+  height: 250px;
   width: 400px;
-  padding: 3dvh 0dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +17,7 @@
   border-radius: 20px;
   outline: 1px solid #00000060;
   outline-offset: -6px;
-  background-color: #afd6ff82;
+  background-color: #ffd3af82;
   position: absolute;
   // backdrop-filter: blur(5px);
 }
@@ -28,25 +27,18 @@ ion-input {
   height: 1.8em;
   margin: 2%;
   font-size: 1em;
+  color: white;
   --ion-color-success: #00000086;
-  --ion-color-primary: #00000086;;
   background-color: rgba(255, 255, 255, 0.086);
   border-radius: 20px;
   padding: 0px 15px !important;
   text-align: center;
 }
 
-ion-checkbox {
-  --border-color: rgb(0, 0, 0);
-  --checkbox-background: rgb(255, 255, 255);
-  --border-color-checked: rgb(0, 0, 0);
-  --checkbox-background-checked: rgba(22, 22, 22, 0.113);
-  --checkmark-color: black;
-}
 
 button {
   padding: 10px 10px;
-  background-color: rgba(255, 255, 255, 0.498);
+  background-color: rgb(77, 67, 55);
   border-radius: 15px;
   margin-top: 10px;
 }

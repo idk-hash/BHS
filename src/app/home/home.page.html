@@ -1,19 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inbox
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="main">
+  <div class="header">
+    NODE PAGE
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+  <div class="grid">
+    <div *ngFor="let item of getMessages()" class="nodeButton">
+      Hi
+    </div>
+  </div>
 
-  <div>he {{this.testtt}} hLLe {{this.devvv}} </div>
-  
-  <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
-  </ion-list>
-</ion-content>
+</div>

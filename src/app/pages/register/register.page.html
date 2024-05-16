@@ -1,0 +1,11 @@
+<div class="main">
+  <form [formGroup]="form" class="log-cont" (ngSubmit)="onSubmit()">
+    <div class="label">Product Registration</div>
+    <ion-input name="email" formControlName="email" placeholder="Email" required></ion-input>
+    <ion-input name="product_id" formControlName="product_id" placeholder="Product ID"></ion-input>
+    
+    <div *ngIf="errMessage" class="alert"> {{ errMessage }} </div>
+
+    <button type="submit">Register</button>
+  </form>
+</div>

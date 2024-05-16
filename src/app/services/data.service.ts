@@ -8,10 +8,26 @@ export interface Message {
   read: boolean;
 }
 
+export interface FeatureModule{
+  name: string;
+  type: number;
+  
+}
+
+export interface NodeModule {
+  address: string;
+  ID: string;
+  code: string;
+  room_name: string;
+  modules: NodeModule[];
+  features: NodeModule[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+
   public messages: Message[] = [
     {
       fromName: 'Matt Chorsey',
@@ -62,13 +78,13 @@ export class DataService {
       id: 6,
       read: false
     },
-    {
-      fromName: 'Kelly Richardson',
-      subject: 'Placeholder Headhots',
-      date: 'Last Week',
-      id: 7,
-      read: false
-    }
+    // {
+    //   fromName: 'Kelly Richardson',
+    //   subject: 'Placeholder Headhots',
+    //   date: 'Last Week',
+    //   id: 7,
+    //   read: false
+    // }
   ];
 
   constructor() { }
@@ -80,4 +96,5 @@ export class DataService {
   public getMessageById(id: number): Message {
     return this.messages[id];
   }
+
 }

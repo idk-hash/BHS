@@ -28,7 +28,12 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "assets"
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/runner",
+                "output": "/runner/"
               }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
@@ -78,9 +83,6 @@
             },
             "development": {
               "buildTarget": "app:build:development"
-            },
-            "ci": {
-              "progress": false
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +106,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+              },
+              {
+                "glob": "runner.js",
+                "input": "src/app/runners",
+                "output": "./runners"
               }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
@@ -126,7 +133,10 @@
     }
   },
   "cli": {
-    "schematicCollections": ["@ionic/angular-toolkit"]
+    "schematicCollections": [
+      "@ionic/angular-toolkit"
+    ],
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

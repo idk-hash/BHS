@@ -87,7 +87,7 @@
       },
       {
         "file": ".vscode/settings.json",
-        "hash": "13975483924899914677"
+        "hash": "5611257266296869630"
       },
       {
         "file": "android/.gitignore",
@@ -99,7 +99,7 @@
       },
       {
         "file": "android/app/build.gradle",
-        "hash": "13919253821277742230"
+        "hash": "4462205925370081679"
       },
       {
         "file": "android/app/capacitor.build.gradle",
@@ -115,7 +115,7 @@
       },
       {
         "file": "android/app/src/main/AndroidManifest.xml",
-        "hash": "17946093470417537499"
+        "hash": "10817180248672312984"
       },
       {
         "file": "android/app/src/main/java/io/ionic/starter/MainActivity.java",
@@ -283,7 +283,7 @@
       },
       {
         "file": "android/gradle/wrapper/gradle-wrapper.properties",
-        "hash": "3050802815878914482"
+        "hash": "7787779767832145847"
       },
       {
         "file": "android/gradlew",
@@ -299,15 +299,15 @@
       },
       {
         "file": "android/variables.gradle",
-        "hash": "4449120877528301199"
+        "hash": "9467210284462474397"
       },
       {
         "file": "angular.json",
-        "hash": "1120909025037108706"
+        "hash": "16367309337981072212"
       },
       {
         "file": "capacitor.config.ts",
-        "hash": "291607583562479120"
+        "hash": "2334694249559159213"
       },
       {
         "file": "ionic.config.json",
@@ -359,7 +359,7 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "6297306549351790869"
+        "hash": "17942176063704853399"
       },
       {
         "file": "src/app/message/message.component.html",
@@ -410,16 +410,8 @@
         "hash": "16681275520738448055"
       },
       {
-        "file": "src/app/runner/runner.js",
-        "hash": "16954762903182255322"
-      },
-      {
-        "file": "src/app/services/bluetooth.service.spec.ts",
-        "hash": "15668325245109384300"
-      },
-      {
-        "file": "src/app/services/bluetooth.service.ts",
-        "hash": "2773866710395339312"
+        "file": "src/app/runners/runner.js",
+        "hash": "13810014705986420120"
       },
       {
         "file": "src/app/services/data.service.spec.ts",
@@ -427,7 +419,7 @@
       },
       {
         "file": "src/app/services/data.service.ts",
-        "hash": "15983176722547156971"
+        "hash": "6180884653690048088"
       },
       {
         "file": "src/app/services/server.service.spec.ts",
@@ -435,7 +427,7 @@
       },
       {
         "file": "src/app/services/server.service.ts",
-        "hash": "10174014357425178950"
+        "hash": "1864918409605766451"
       },
       {
         "file": "src/app/view-message/view-message.page.html",
